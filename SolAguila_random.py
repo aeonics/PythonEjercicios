@@ -1,4 +1,4 @@
-"""Simple ejemplod e uso de random, para crear un programa de Cara o cruz (sol o aguila)"""
+"""Simple ejemplo de uso de random, para crear un programa de Cara o cruz (sol o aguila)"""
 
 
 
