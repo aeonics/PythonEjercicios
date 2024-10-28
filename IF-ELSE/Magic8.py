@@ -1,25 +1,46 @@
-The Magic 8 Ball is a popular office toy and children's toy invented in the 1940s for fortune-telling and advice seeking. 🎱
+"""
+The Magic 8 Ball es un popular juguete de oficina y juguete infantil inventado en la década de 1940 para la búsqueda de adivinos y asesoramiento. 🎱
+Es una bola sobredimencionada con algunas de las siguientes respuestas:
+    Sí, definitivamente.
+    Es decididamente así.
+    Sin duda.
+    Responder brumoso, inténtalo de nuevo.
+    Pregunta de nuevo más tarde.
+    Mejor no te lo digas ahora.
+    Mis fuentes dicen que no.
+    Perspectivas no tan buena.
+    Muy dudoso.
 
-It's an oversized 8 ball with some of the following answers:
+Cree un programa que pueda responder a cualquier pregunta Sí o No con una respuesta diferente cada vez que ejecute.
+La salida debe tener el siguiente formato:
+Pregunta:      [Pregunta]
+Bola 8 magica:  [Respuesta]
 
-    Yes - definitely.
-    It is decidedly so.
-    Without a doubt.
-    Reply hazy, try again.
-    Ask again later.
-    Better not tell you now.
-    My sources say no.
-    Outlook not so good.
-    Very doubtful.
+Ejemplo:
+Pregunta:      Es Codédex mejor que Udemy Udemy?
+Bola 8 magica:  Mejor no te lo digas ahora.
+"""
 
-Create a magic8.py program that can respond to any Yes or No questions with a different answer each time it executes.
+import random
+magicNum = random.randint(1 ,9)
+pregunta = input("Hazme una pregunta: ")
 
-The output should have the following format:
 
-Question:      [Question]
-Magic 8 Ball:  [Answer]
-
-For example:
-
-Question:      Is Codédex better than Udemy yet?
-Magic 8 Ball:  Better not tell you now.
+if magicNum == 1:
+    print("Sí, definitivamente.")
+elif magicNum == 2:
+    print("Es decididamente así.")
+elif magicNum == 3:
+    print("Sin duda.")
+elif magicNum == 4:
+    print("Respuesta confusa, inténtalo de nuevo.")
+elif magicNum == 5:
+    print("Pregunta de nuevo más tarde.")
+elif magicNum == 6:
+    print("Mejor no te lo digo ahora.")
+elif magicNum == 7:
+    print("Mis fuentes dicen que no.")
+elif magicNum == 8:
+    print("Perspectivas no tan buena.")
+elif magicNum == 9:
+    print("Muy dudoso.")
