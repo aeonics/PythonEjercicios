@@ -11,6 +11,13 @@ Utilice una combinación de operadores relacionales y lógicos para crear las re
     Si son lo suficientemente altos, pero no tienen suficientes créditos, imprime "No tienes suficientes créditos".
     El mismo, imprime un mensaje diciendo que no han cumplido ninguno de los requisitos."""
 
+"""
+    A	B	A and B	A or B
+    False	False	False	False
+    False	True	False	True
+    True	False	False	True
+    True	True	True	True
+"""
 print("Nuevo sistema de entrada para  \"The Cyclone\" ")
 
 altura = float(input("¿Cual es tu altura en cm?: "))
@@ -18,3 +25,11 @@ creditos = int(input("¿Cuantos creditos tienes: "))
 
 
 
+if altura >= 137 and creditos >= 10: 
+    print("Disfrute el paseo")
+elif altura < 137 and creditos > 10: 
+    print("No eres lo suficientemente alto para montar")
+elif altura >= 137 and creditos < 10:
+    print ("No tienes suficientes créditos")
+elif altura < 137 or creditos < 10: 
+    print ("No han cumplido ninguno de los requisitos")
